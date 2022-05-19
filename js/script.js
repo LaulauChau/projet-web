@@ -1,8 +1,15 @@
-function myFunction() {
-    var x = document.getElementById("nav");
-    if (x.className === "nav") {
-        x.className += "responsive";
-    } else {
-        x.className = "nav";
-    }
-}
+const burger = document.querySelector("#burger-menu");
+const ul = document.querySelector("nav ul");
+const nav = document.querySelector("nav");
+
+const navLink = document.querySelector(".nav-link");
+
+burger.addEventListener("click", () => {
+    ul.classList.toggle("show");
+});
+
+navLink.forEach((link) =>
+    link.addEventListener("click", () => {
+        ul.classList.remove("show");
+    })
+);

@@ -3,35 +3,79 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../css/style.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-        <script type="text/javascript" src="../js/script.js"></script>
-        <title>Accueil</title>
+        <script src="../js/script.js"></script>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+        <title>Cédric Doumbe</title>
     </head>
 
     <body>
         <header>
-            <nav class="menu" id="menu">
-                <a href="index.html" class="active">Accueil</a>
-                <a href="#">Page 1</a>
-                <a href="#">Page 2</a>
-                <a href="about.html">A propos</a>
-                <a
-                    href="javascript:void(0);"
-                    class="icon"
-                    onclick="myFunction()"
-                >
-                    <i class="fa fa-bars"></i>
-                </a>
+            <nav>
+                <h1>CEDRIC DOUMBE</h1>
+                <ul class="navigation">
+                    <li><a href="index.html" class="nav-link">Accueil</a></li>
+                    <li><a href="#" class="nav-link">Page 1</a></li>
+                    <li><a href="#" class="nav-link">Page 2</a></li>
+                    <li><a href="about.html" class="nav-link">A propos</a></li>
+                </ul>
+                <button class="burger-menu" id="burger-menu">
+                    <ion-icon class="bars" name="menu-outline"></ion-icon>
+                </button>
             </nav>
         </header>
 
+        <section class="hero" id="about">
+            <img
+                src="../images/photo_1.webp"
+                alt="cédric-doumbe"
+                loading="lazy"
+                class="hero-img"
+            />
+
+            <div class="bio animate__animated animate__shakeX">
+                <h2 class="bio-title">Biographie</h2>
+                <p class="bio-text">
+                    Cédric Doumbe est un combattant MMA et ancien kickboxer
+                    franco-camerounais. <br />En kickboxing, il a été deux fois
+                    champions du monde du Glory en catégorie welter. Le premier
+                    juillet 2017, il a été classé meilleur kickboxer poids
+                    welters du monde par Combat Press.<br />Il a également
+                    participé à la première version française du jeu The Circle
+                    Game sur Netflix, sortie en avril 2020.
+                </p>
+            </div>
+        </section>
+
+        <section class="more-about">
+            <h2>Plus d'information</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consequuntur nostrum dolor minus, libero delectus praesentium
+                perferendis
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consequuntur nostrum dolor minus, libero delectus praesentium
+                perferendis
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Consequuntur nostrum dolor minus, libero delectus praesentium
+                perferendis
+            </p>
+        </section>
+
         <footer>
-            <a href="about.html">A propos</a>
+            <p class="copy"><a href="about.html">A propos</a></p>
         </footer>
     </body>
 </html>
