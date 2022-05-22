@@ -1,215 +1,210 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 
-:root {
-    --font-family: "Roboto", sans-serf;
-    --normal-font: 400;
-    --bold-font: 700;
-    --bolder-font: 900;
-    --bg-color: #fcfcfc;
-    --primary-color: #4756df;
-    --secondary-color: #ff7235;
-    --primary-shadow: #8b8eaf;
-    --secondary-shadow: #a17a69;
-    --bottom-margin: 0.5rem;
-    --bottom-margin-2: 1rem;
-    --line-height: 1.7rem;
-    --transition: 0.3s;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
+/* CSS Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
 }
 
-ul {
-    list-style-type: none;
-}
+/* Header */
 
-a {
-    text-decoration: none;
-    color: var(--primary-color);
-}
-
-a:hover {
-    text-decoration: none;
-    color: var(--secondary-color);
-}
-
-body {
-    font-family: var(--font-family);
-}
-
-section {
-    margin: auto;
-}
-
+/* Navbar */
 nav {
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
     display: flex;
+    height: 80px;
+    width: 100%;
+    background: lightslategrey;
     align-items: center;
     justify-content: space-between;
-    padding: 1.5rem 3.5rem;
-    background-color: var(--bg-color);
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
 }
 
-nav h1 {
-    color: var(--primary-color);
-}
-
-nav a {
-    color: var(--primary-color);
-    transition: var(--transition);
-}
-nav a:hover {
-    color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
+nav .logo {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
 }
 
 nav ul {
     display: flex;
-    gap: 1.9rem;
+    flex-wrap: wrap;
+    list-style: none;
 }
 
 nav ul li {
-    font-weight: var(--bold-font);
+    margin: 0 5px;
 }
 
-.burger-menu {
-    color: var(--primary-color);
-    font-size: 2rem;
-    border: 0;
-    background-color: transparent;
+nav ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    color: lightslategrey;
+    background: #fff;
+}
+
+nav .menu-btn i {
+    color: #fff;
+    font-size: 22px;
     cursor: pointer;
     display: none;
 }
 
-.hero {
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Footer */
+footer {
     display: flex;
+    height: 80px;
+    width: 100%;
+    background: lightslategrey;
     align-items: center;
     justify-content: center;
-    gap: 2.5rem;
-    max-width: 68.75rem;
-    margin: auto;
+    /*padding: 0 50px 0 100px;*/
+    flex-wrap: wrap;
+    bottom: 0;
 }
 
-.hero img {
-    height: 37.5;
-    max-width: 37.5;
+footer a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
 }
 
-.bio {
-    width: 25rem;
-    padding: 0.625rem;
-    border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px var(--primary-shadow);
+footer a:hover {
+    color: #b7c1c3;
 }
 
-.bio h1 {
-    margin-bottom: var(--bottom-margin);
+/* Section */
+section {
+    margin: 10px 80px;
+    margin-top: 30px;
 }
 
-.bio p {
-    line-height: var(--line-height);
-    padding: 0.3rem 0;
+/* Article */
+section article {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
-.more-about {
-    background-color: var(--bg-color);
-    padding: 1rem 6rem;
+section article .left img {
+    height: 300px;
+    max-width: 500px;
 }
 
-.more-about h2 {
-    margin-bottom: var(--bottom-margin);
+section article .right {
+    margin-left: 40px;
+    max-width: 50%;
+}
+
+section article .right p.sur-titre {
+    color: #7f7e7e;
+}
+
+section article .right p.description {
+    color: #2d2d2d;
+}
+
+table > tr > th,
+table > tr > td,
+table > * > tr > th,
+table > * > tr > td {
+    border: 1px solid #a2a9b1;
+    padding: 0.2em 0.4em;
+}
+
+table {
+    color: #202122;
+    border-collapse: collapse;
+    font-size: 85%;
+    width: 100%;
     text-align: center;
 }
 
-.more-about p {
-    line-height: var(--line-height);
-    padding: 0.4rem;
-}
-
-footer {
-    background-color: var(--bg-color);
-    padding: 1.25rem;
-    text-align: center;
-    margin: 2rem 0 0;
-}
-
-@media screen and (max-width: 720px) {
+/* Responsive */
+@media (max-width: 1000px) {
     nav {
-        padding: 1.5rem 1rem;
+        padding: 0 40px 0 50px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    nav .menu-btn i {
+        display: block;
+    }
+
+    #click:checked ~ .menu-btn i:before {
+        content: "\f00d";
     }
 
     nav ul {
         position: fixed;
-        background-color: var(--bg-color);
-        flex-direction: column;
-        top: 86px;
-        left: 10%;
-        width: 80%;
+        top: 80px;
+        left: -100%;
+        background: lightslategrey;
+        height: 100vh;
+        width: 100%;
         text-align: center;
-        transform: translateX(120%);
-        transition: transform 0.5s ease-in;
+        display: block;
+        transition: all 0.3s ease;
     }
 
-    nav ul.show {
-        transform: translateX(0);
+    #click:checked ~ ul {
+        left: 0;
     }
 
     nav ul li {
-        margin: 8px;
+        width: 100%;
+        margin: 40px 0;
     }
 
-    .burger-menu {
+    nav ul li a {
+        width: 100%;
+        margin-left: -100%;
         display: block;
+        font-size: 20px;
+        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
 
-    .hero {
-        margin-top: -4rem;
-        flex-direction: column;
-        gap: 0;
+    #click:checked ~ ul li a {
+        margin-left: 0px;
     }
 
-    .bio {
-        margin-top: -7rem;
-        width: 20.5rem;
+    nav ul li a.active,
+    nav ul li a:hover {
+        background: none;
+        color: #b7c1c3;
     }
 
-    .hero img {
-        height: 37.5rem;
-        width: 30rem;
+    section {
+        margin: 10px 20px;
     }
 
-    .more-about {
-        margin-top: 2rem;
-        padding: 1rem 3.5rem;
+    section article .left img {
+        height: 100%;
+        width: 100%;
     }
 
-    .more-about h2 {
-        text-align: center;
-    }
-
-    .more-about p {
-        text-align: justify;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    .hero img {
-        height: 37.5rem;
-        width: 23rem;
-    }
-
-    .bio {
-        width: 18.3rem;
+    section article .right {
+        margin: 0px;
+        max-width: 100%;
     }
 }

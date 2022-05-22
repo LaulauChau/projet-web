@@ -1,81 +1,108 @@
 <!DOCTYPE html>
-
 <html lang="fr">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../css/style.css" />
-        <script src="../js/script.js"></script>
-        <script
-            type="module"
-            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-        ></script>
-        <script
-            nomodule
-            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-        ></script>
-        <title>Cédric Doumbe</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        />
+        <title>Cyril Gane | Accueil</title>
     </head>
-
     <body>
         <header>
             <nav>
-                <h1>CEDRIC DOUMBE</h1>
-                <ul class="navigation">
-                    <li><a href="index.html" class="nav-link">Accueil</a></li>
-                    <li><a href="#" class="nav-link">Page 1</a></li>
-                    <li><a href="#" class="nav-link">Page 2</a></li>
-                    <li><a href="about.html" class="nav-link">A propos</a></li>
+                <div class="logo">Cyril Gane</div>
+
+                <input type="checkbox" id="click" />
+                <label for="click" class="menu-btn">
+                    <i class="fas fa-bars"></i>
+                </label>
+
+                <ul>
+                    <li><a class="active" href="#">Accueil</a></li>
+                    <li><a href="palmares.html">Palmarès</a></li>
+                    <li><a href="#">Lien menu 3</a></li>
+                    <li><a href="about.html">A propos</a></li>
                 </ul>
-                <button class="burger-menu" id="burger-menu">
-                    <ion-icon class="bars" name="menu-outline"></ion-icon>
-                </button>
             </nav>
         </header>
 
-        <section class="hero" id="about">
-            <img
-                src="../images/photo_1.webp"
-                alt="cédric-doumbe"
-                loading="lazy"
-                class="hero-img"
-            />
+        <section>
+            <article>
+                <div class="left">
+                    <img src="../images/image_1.jpg" alt="photo" />
+                </div>
 
-            <div class="bio animate__animated animate__shakeX">
-                <h2 class="bio-title">Biographie</h2>
-                <p class="bio-text">
-                    Cédric Doumbe est un combattant MMA et ancien kickboxer
-                    franco-camerounais. <br />En kickboxing, il a été deux fois
-                    champions du monde du Glory en catégorie welter. Le premier
-                    juillet 2017, il a été classé meilleur kickboxer poids
-                    welters du monde par Combat Press.<br />Il a également
-                    participé à la première version française du jeu The Circle
-                    Game sur Netflix, sortie en avril 2020.
-                </p>
-            </div>
-        </section>
+                <div class="right">
+                    <p class="sur-titre">Biographie</p>
+                    <h1>Qui est-il ?</h1>
+                    <p class="description">
+                        Ciryl Gane naît le 12 avril 1990 à La Roche-sur-Yon.
+                        Durant sa jeunesse, Ciryl Gane joue au football et au
+                        basket-ball. Il obtient un BTS dans le domaine de la
+                        vente au lycée professionnel Édouard Branly de la La
+                        Roche-sur-Yon. Par la suite, il rejoint Paris pour
+                        poursuivre sa formation en alternance dans un magasin de
+                        meubles. C'est un ancien camarade de classe qui le
+                        dirige vers une salle de muay-thaï. Durant trois années,
+                        il va remporter deux titres de champion de France. Il va
+                        également remporter son combat contre le numéro 1
+                        mondial des poids lourds, le belge Yassine Boughanem.
+                    </p>
+                </div>
+            </article>
 
-        <section class="more-about">
-            <h2>Plus d'information</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Consequuntur nostrum dolor minus, libero delectus praesentium
-                perferendis
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Consequuntur nostrum dolor minus, libero delectus praesentium
-                perferendis
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Consequuntur nostrum dolor minus, libero delectus praesentium
-                perferendis
-            </p>
+            <article>
+                <div class="left">
+                    <img src="../images/image_2.jpg" alt="photo" />
+                </div>
+
+                <div class="right">
+                    <p class="sur-titre">Carrière en Muay-Thaï</p>
+                    <h1>Le commencement</h1>
+                    <p class="description">
+                        Le 4 juin 2016, Ciryl Gane fait ses débuts
+                        professionnels en muay-thaï. Il affronte le Français
+                        Jérémy Jeanne à Châlons-en-Champagne et remporte le
+                        combat par TKO, et devient champion de France dans la
+                        catégorie des + de 91 kg. Le 28 octobre 2017, il
+                        affronte le Belge Yassine Boughanem à Paris et remporte
+                        le combat sur décision. Son record en carrière est de 13
+                        victoires (9 TKO/KO et 4 décisions) pour 0 défaite.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <div class="left">
+                    <img src="../images/CYRIL-GANE-1.png" alt="photo" />
+                </div>
+
+                <div class="right">
+                    <p class="sur-titre">Carrière en Art Martiaux Mixte</p>
+                    <h1>Son ascension</h1>
+                    <p class="description">
+                        Le 2 août 2018, Ciryl Gane fait ses débuts
+                        professionnels en MMA. Le 7 août 2021, il devient
+                        champion intérimaire des poids lourds de l'UFC en
+                        battant par TKO l'Américain Derrick Lewis. Gane devient
+                        ainsi le premier français de l'histoire à remporter une
+                        ceinture de la prestigieuse organisation américaine. Le
+                        22 janvier 2022, il affronte Francis Ngannou, champion
+                        des poids lourds de l'UFC. Ciryl Gane essuie alors la
+                        première défaite de sa carrière dans les sports de
+                        combat (MMA et Muay-thaï) et met ainsi fin à une série
+                        de 23 victoires consécutives.
+                    </p>
+                </div>
+            </article>
         </section>
 
         <footer>
-            <p class="copy"><a href="about.html">A propos</a></p>
+            <a href="about.html">A propos</a>
         </footer>
     </body>
 </html>

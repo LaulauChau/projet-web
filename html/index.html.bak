@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <script src="../js/script.js"></script>
+        <title>Cédric Doumbe | Accueil</title>
+    </head>
+
+    <body>
+        <nav>
+            <h1>Cédric Doumbe</h1>
+
+            <div class="onglets">
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Page 1</a></li>
+                    <li><a href="#">Page 2</a></li>
+                    <li><a href="#">A propos</a></li>
+                </ul>
+            </div>
+
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line2"></div>
+            </div>
+        </nav>
+
+        <section class="articles">
+            <div class="article">
+                <div class="left">
+                    <img src="../images/photo_1.webp" alt="photo_1" />
+                </div>
+
+                <div class="right">
+                    <p class="sous-titre">Cédric Doumbe</p>
+                    <h1>Qui est-il ?</h1>
+                    <p class="description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Ad cupiditate repellendus dolor necessitatibus.
+                        Modi, quos! Explicabo voluptates vero ullam quis ipsum
+                        impedit illum numquam cum quaerat animi? Ad, fugiat
+                        neque.
+                    </p>
+                </div>
+            </div>
+
+            <div class="article">
+                <div class="left">
+                    <img
+                        src="https://cdn.pixabay.com/photo/2016/11/18/19/01/paris-1836415_1280.jpg"
+                        alt="photo_1"
+                    />
+                </div>
+
+                <div class="right">
+                    <h1>Paris - La ville des lumières, pourquoi ?</h1>
+                    <p class="description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Ad cupiditate repellendus dolor necessitatibus.
+                        Modi, quos! Explicabo voluptates vero ullam quis ipsum
+                        impedit illum numquam cum quaerat animi? Ad, fugiat
+                        neque.
+                    </p>
+                </div>
+            </div>
+
+            <div class="article">
+                <div class="left">
+                    <img
+                        src="https://cdn.pixabay.com/photo/2016/11/18/19/01/paris-1836415_1280.jpg"
+                        alt="photo_1"
+                    />
+                </div>
+
+                <div class="right">
+                    <h1>Paris - La ville des lumières, pourquoi ?</h1>
+                    <p class="description">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Ad cupiditate repellendus dolor necessitatibus.
+                        Modi, quos! Explicabo voluptates vero ullam quis ipsum
+                        impedit illum numquam cum quaerat animi? Ad, fugiat
+                        neque.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <a href="#">A propos</a>
+        </footer>
+    </body>
+</html>

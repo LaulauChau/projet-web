@@ -1,8 +1,7 @@
-const burger = document.querySelector("#burger-menu");
+const burger = document.querySelector(".burger");
 const ul = document.querySelector("nav ul");
 const nav = document.querySelector("nav");
-
-const navLink = document.querySelector(".nav-link");
+const navLink = document.querySelector("nav ul a");
 
 burger.addEventListener("click", () => {
     ul.classList.toggle("show");
