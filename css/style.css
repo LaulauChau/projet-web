@@ -93,33 +93,33 @@ footer a:hover {
 }
 
 /* Section */
-section {
+.section {
     margin: 10px 80px;
     margin-top: 30px;
 }
 
 /* Article */
-section article {
+.section .rticle {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
 }
 
-section article .left img {
+.section .article .left img {
     height: 300px;
     max-width: 500px;
 }
 
-section article .right {
+.section .article .right {
     margin-left: 40px;
     max-width: 50%;
 }
 
-section article .right p.sur-titre {
+.section .article .right p.sur-titre {
     color: #7f7e7e;
 }
 
-section article .right p.description {
+.section .article .right p.description {
     color: #2d2d2d;
 }
 
@@ -194,16 +194,16 @@ table {
         color: #b7c1c3;
     }
 
-    section {
+    .section {
         margin: 10px 20px;
     }
 
-    section article .left img {
+    .section .article .left img {
         height: 100%;
         width: 100%;
     }
 
-    section article .right {
+    .section .article .right {
         margin: 0px;
         max-width: 100%;
     }
