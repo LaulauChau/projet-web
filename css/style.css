@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
 
-/* CSS Reset */
+/* CSS Resets*/
 * {
     margin: 0;
     padding: 0;
@@ -8,203 +8,248 @@
     font-family: "Poppins", sans-serif;
 }
 
-/* Header */
+a,
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
 
 /* Navbar */
 nav {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
     display: flex;
-    height: 80px;
-    width: 100%;
-    background: lightslategrey;
     align-items: center;
     justify-content: space-between;
-    padding: 0 50px 0 100px;
-    flex-wrap: wrap;
+    padding: 1.5rem 3.5rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
 
-nav .logo {
-    color: #fff;
-    font-size: 35px;
-    font-weight: 600;
+nav h1 {
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 900;
+}
+
+nav a,
+footer a {
+    transition: 0.3s;
+    color: #7f7e7e;
+}
+
+nav a:hover,
+footer a:hover,
+nav a.active {
+    border-bottom: 2px solid;
+    color: black;
 }
 
 nav ul {
     display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+    gap: 1.9rem;
 }
 
 nav ul li {
-    margin: 0 5px;
+    font-weight: 600;
 }
 
-nav ul li a {
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 15px;
-    border-radius: 5px;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-}
-
-nav ul li a.active,
-nav ul li a:hover {
-    color: lightslategrey;
-    background: #fff;
-}
-
-nav .menu-btn i {
-    color: #fff;
-    font-size: 22px;
-    cursor: pointer;
+.hamburger {
     display: none;
 }
 
-input[type="checkbox"] {
-    display: none;
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: black;
+    transform-origin: 0 0;
+    transition: 0.4s;
 }
 
-/* Footer */
-footer {
-    display: flex;
-    height: 80px;
-    width: 100%;
-    background: lightslategrey;
-    align-items: center;
-    justify-content: center;
-    /*padding: 0 50px 0 100px;*/
-    flex-wrap: wrap;
-    bottom: 0;
+.hamburger:hover div:nth-child(2) {
+    transform: translateX(10px);
 }
 
-footer a {
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
+section {
+    margin: 30px 80px;
 }
 
-footer a:hover {
-    color: #b7c1c3;
-}
-
-/* Section */
-.section {
-    margin: 10px 80px;
-    margin-top: 30px;
-}
-
-/* Article */
-.section .rticle {
+section article {
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 30px;
 }
 
-.section .article .left img {
+section article .left img {
     height: 300px;
     max-width: 500px;
 }
 
-.section .article .right {
+section article .right {
     margin-left: 40px;
     max-width: 50%;
 }
 
-.section .article .right p.sur-titre {
+section article .right p.sur-titre {
     color: #7f7e7e;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
-.section .article .right p.description {
+section article .right p {
     color: #2d2d2d;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
+footer {
+    padding: 1.25rem;
+    text-align: center;
+    margin: 2rem 0 0;
+    box-shadow: 0 -3px 5px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 3.5rem;
+}
+/*
 table > tr > th,
 table > tr > td,
 table > * > tr > th,
 table > * > tr > td {
     border: 1px solid #a2a9b1;
     padding: 0.2em 0.4em;
+}*/
+
+table,
+th,
+tr,
+td {
+    border: 1px solid #a2a9b1;
 }
 
 table {
-    color: #202122;
+    border: 1px solid #ccc;
     border-collapse: collapse;
-    font-size: 85%;
     width: 100%;
+}
+
+table caption {
+    font-size: 1.5em;
+    margin: 0.5em 0 0.75em;
+}
+
+table th,
+table td {
+    padding: 0.625em;
     text-align: center;
 }
 
-/* Responsive */
-@media (max-width: 1000px) {
-    nav {
-        padding: 0 40px 0 50px;
-    }
+table th {
+    font-size: 0.85em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
-@media screen and (max-width: 920px) {
-    nav .menu-btn i {
-        display: block;
-    }
-
-    #click:checked ~ .menu-btn i:before {
-        content: "\f00d";
+@media screen and (max-width: 750px) {
+    nav {
+        padding: 1.5rem 1rem;
     }
 
     nav ul {
         position: fixed;
-        top: 80px;
-        left: -100%;
-        background: lightslategrey;
-        height: 100vh;
-        width: 100%;
+        flex-direction: column;
+        top: 86px;
+        left: 10%;
+        width: 80%;
         text-align: center;
-        display: block;
-        transition: all 0.3s ease;
+        transform: translateX(120%);
+        transition: transform 0.3s ease-in;
     }
 
-    #click:checked ~ ul {
-        left: 0;
+    nav ul.show {
+        transform: translateX(0);
+        background-color: white;
     }
 
     nav ul li {
-        width: 100%;
-        margin: 40px 0;
+        margin: 8px;
     }
 
-    nav ul li a {
-        width: 100%;
-        margin-left: -100%;
+    .hamburger {
         display: block;
-        font-size: 20px;
-        transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        cursor: pointer;
     }
 
-    #click:checked ~ ul li a {
-        margin-left: 0px;
-    }
-
-    nav ul li a.active,
-    nav ul li a:hover {
-        background: none;
-        color: #b7c1c3;
-    }
-
-    .section {
-        margin: 10px 20px;
-    }
-
-    .section .article .left img {
+    section article .left img {
         height: 100%;
         width: 100%;
     }
 
-    .section .article .right {
+    section article .right {
         margin: 0px;
         max-width: 100%;
+    }
+
+    input[type="checkbox"]:checked ~ .menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    section article .right {
+        margin: 0px;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    table {
+        border: 0;
+    }
+
+    table caption {
+        font-size: 1.3em;
+    }
+
+    table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    table tr {
+        border-bottom: 3px solid #ddd;
+        display: block;
+        margin-bottom: 0.625em;
+    }
+
+    table td {
+        border-bottom: 1px solid #ddd;
+        display: block;
+        font-size: 0.8em;
+        text-align: right;
+    }
+
+    table td::before {
+        /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    table td:last-child {
+        border-bottom: 0;
     }
 }

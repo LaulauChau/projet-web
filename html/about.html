@@ -5,33 +5,132 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="../css/style.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        />
-        <title>Cyril Gane | Accueil</title>
+        <title>Cyril Gane | A propos</title>
     </head>
     <body>
         <header>
             <nav>
-                <div class="logo">Cyril Gane</div>
+                <h1>Cyril Gane</h1>
 
-                <input type="checkbox" id="click" />
-                <label for="click" class="menu-btn">
-                    <i class="fas fa-bars"></i>
-                </label>
+                <div class="onglets">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="palmares.html">Palmarès</a></li>
+                        <li><a href="#">Le MMA en France</a></li>
+                        <li>
+                            <a class="active" href="about.html">A propos</a>
+                        </li>
+                    </ul>
+                </div>
 
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="palmares.html">Palmarès</a></li>
-                    <li><a href="#">Lien menu 3</a></li>
-                    <li><a class="active" href="about.html">A propos</a></li>
-                </ul>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </nav>
         </header>
+
+        <section>
+            <article>
+                <div class="left">
+                    <p>
+                        Ce site web a été réaliser du projet dans la matière
+                        <em>Programmation Web</em> enseignée à l'<b
+                            >EFREI Paris</b
+                        >.
+                    </p>
+                    <p>
+                        Il a pour objectif de faire une courte présentation du
+                        combattant de MMA français : <b>Cyril Gane</b>.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <div class="left">
+                    <p>
+                        Ce site a été réaliser par <b>Laurent CHAU</b> et
+                        <b>Mouhamadou GUEYE</b> tout dans le groupe
+                        <b>L2-R</b> de la promotion <b>2025</b>.
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <table>
+                    <caption>
+                        Répartition des tâches
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Tâche</th>
+                            <th scope="col">Description</th>
+                            <th scope="col">Auteur</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row" data-label="Tâche">
+                                Etablissement du cahier des charges
+                            </td>
+                            <td data-label="Description">
+                                Définition des objectifs, du graphisme, des
+                                pages et technique du site web
+                            </td>
+                            <td data-label="Auteur">
+                                <p>Laurent CHAU</p>
+                                <p>Mouhamadou GUEYE</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td scope="row" data-label="Tâche">
+                                Réalisation de la maquette du site
+                            </td>
+                            <td data-label="Description">
+                                Création des pages HTML, mise en place de
+                                l'arborescence du site
+                            </td>
+                            <td data-label="Auteur">Mouhamadou GUEYE</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" data-label="Tâche">
+                                Réalisation de la charte graphique du site
+                            </td>
+                            <td data-label="Description">
+                                Mise en forme des pages du site
+                            </td>
+                            <td data-label="Auteur">Laurent CHAU</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" data-label="Tâche">
+                                Réalisation du responsive design
+                            </td>
+                            <td data-label="Description">
+                                Adapter l'affichage du site web sur différente
+                                plateforme
+                            </td>
+                            <td data-label="Auteur">Laurent CHAU</td>
+                        </tr>
+                        <tr>
+                            <td scope="row" data-label="Tâche">
+                                Réalisation formulaire
+                            </td>
+                            <td data-label="Description">
+                                Création du formulaire ainsi que du tableau
+                                dynamique obligatoires
+                            </td>
+                            <td data-label="Auteur">Mouhamadou GUEYE</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+        </section>
 
         <footer>
             <a href="about.html">A propos</a>
         </footer>
+
+        <script type="text/javascript" src="../js/script.js"></script>
     </body>
 </html>

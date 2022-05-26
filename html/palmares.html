@@ -9,210 +9,335 @@
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         />
-        <title>Cyril Gane | Accueil</title>
+        <title>Cyril Gane | Palmarès</title>
     </head>
     <body>
         <header>
             <nav>
-                <div class="logo">Cyril Gane</div>
+                <h1>Cyril Gane</h1>
 
-                <input type="checkbox" id="click" />
-                <label for="click" class="menu-btn">
-                    <i class="fas fa-bars"></i>
-                </label>
+                <div class="onglets">
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li>
+                            <a class="active" href="palmares.html">Palmarès</a>
+                        </li>
+                        <li><a href="#">Le MMA en France</a></li>
+                        <li><a href="about.html">A propos</a></li>
+                    </ul>
+                </div>
 
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a class="active" href="palmares.html">Palmarès</a></li>
-                    <li><a href="#">Lien menu 3</a></li>
-                    <li><a href="about.html">A propos</a></li>
-                </ul>
+                <div class="hamburger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
             </nav>
         </header>
 
-        <div class="section">
-            <div class="article">
+        <section>
+            <article>
+                <div class="left">
+                    <h1>Différente manière de gagner à l'UFC</h1>
+                    <p>
+                        Le Knockout (KO) : le KO termine un combat lorsqu'un des
+                        participants perd conscience à cause des coups qu'il a
+                        encaissés.
+                    </p>
+                    <p>
+                        Le KO Technique (TKO) : Le TKO est déclaré par l'arbitre
+                        ou le médedin lorsqu'un combattant n'est plus jugé apte
+                        à continuer le combat.
+                    </p>
+                    <p>
+                        La soumision : Elle est représentée par l'abandon d'un
+                        combattant suite à un étranglement ou une clé de
+                        soumission.
+                    </p>
+                    <p>
+                        Décision unanime : Elle est déclaré lorsque les trois
+                        juges sont du même avis sur le vainqueur.
+                    </p>
+                </div>
+            </article>
+
+            <article>
                 <table>
+                    <caption>
+                        Palmarès en Art Martiaux Mixte
+                    </caption>
                     <thead>
                         <tr>
-                            <th>Résultat</th>
-                            <th>Record</th>
-                            <th>Adversaire</th>
-                            <th>Méthode</th>
-                            <th>Evènement</th>
-                            <th>Date</th>
-                            <th>Round</th>
-                            <th>Temps</th>
-                            <th>Lieu</th>
-                            <th>Notes</th>
+                            <th scope="col">Résultat</th>
+                            <th scope="col">Record</th>
+                            <th scope="col">Adversaire</th>
+                            <th scope="col">Méthode</th>
+                            <th scope="col">Evènement</th>
+                            <th scope="col">Date</th>
+                            <th scope="col">Round</th>
+                            <th scope="col">Temps</th>
+                            <th scope="col">Lieu</th>
+                            <th scope="col">Notes</th>
                         </tr>
                     </thead>
 
                     <tbody>
                         <tr>
-                            <td style="background: #ffdddd">Défaite</td>
-                            <td>10-1</td>
-                            <td>Francis Ngannou</td>
-                            <td>Décision unanime</td>
-                            <td>UFC 270: Ngannou vs Gane</td>
-                            <td>22 janvier 2022</td>
-                            <td>5</td>
-                            <td>5:00</td>
-                            <td>Los Angeles, Etats-Unis</td>
-                            <td>Pour le titre des poids lourds de l'UFC</td>
+                            <td
+                                scope="row"
+                                data-label="Résultat"
+                                style="background: #ffdddd"
+                            >
+                                Défaite
+                            </td>
+                            <td data-label="Record">10-1</td>
+                            <td data-label="Adversaire">Francis Ngannou</td>
+                            <td data-label="Méthode">Décision unanime</td>
+                            <td data-label="Evènement">
+                                UFC 270: Ngannou vs Gane
+                            </td>
+                            <td data-label="Date">22 janvier 2022</td>
+                            <td data-label="Round">5</td>
+                            <td data-label="Temps">5:00</td>
+                            <td data-label="Lieu">Los Angeles, Etats-Unis</td>
+                            <td data-label="Notes">
+                                Pour le titre des poids lourds de l'UFC
+                            </td>
                         </tr>
                         <tr>
-                            <td style="background: #ddffdd">Victoire</td>
-                            <td>10-0</td>
-                            <td>Derrick Lewis</td>
-                            <td>TKO (coups de poing)</td>
-                            <td>UFC 265: Lewis vs Gane</td>
-                            <td>7 août 2021</td>
-                            <td>3</td>
-                            <td>4:11</td>
-                            <td>Houston, Texas, Etats-Unis</td>
-                            <td>
+                            <td
+                                scope="row"
+                                data-label="Résultat"
+                                style="background: #ddffdd"
+                            >
+                                Victoire
+                            </td>
+                            <td data-label="Record">10-0</td>
+                            <td data-label="Adversaire">Derrick Lewis</td>
+                            <td data-label="Méthode">TKO (coups de poing)</td>
+                            <td data-label="Evènement">
+                                UFC 265: Lewis vs Gane
+                            </td>
+                            <td data-label="Date">7 août 2021</td>
+                            <td data-label="Round">3</td>
+                            <td data-label="Temps">4:11</td>
+                            <td data-label="Lieu">
+                                Houston, Texas, Etats-Unis
+                            </td>
+                            <td data-label="Notes">
                                 Remporte le titre de champion intérimaire des
                                 poids lourds de l'UFC.
                                 <p>Performance de la soirée</p>
                             </td>
                         </tr>
                         <tr>
-                            <td style="background: #ddffdd">Victoire</td>
-                            <td>9-0</td>
-                            <td>Alexander Volkov</td>
-                            <td>Décision unanime</td>
-                            <td>UFC Fight Night: Gane vs Volkov</td>
-                            <td>26 juin 2021</td>
-                            <td>5</td>
-                            <td>5:00</td>
-                            <td>Las Vegas, Etats-Unis</td>
-                            <td></td>
+                            <td
+                                scope="row"
+                                data-label="Résultat"
+                                style="background: #ddffdd"
+                            >
+                                Victoire
+                            </td>
+                            <td data-label="Record">9-0</td>
+                            <td data-label="Adversaire">Alexander Volkov</td>
+                            <td data-label="Méthode">Décision unanime</td>
+                            <td data-label="Evènement">
+                                UFC Fight Night: Gane vs Volkov
+                            </td>
+                            <td data-label="Date">26 juin 2021</td>
+                            <td data-label="Round">5</td>
+                            <td data-label="Temps">5:00</td>
+                            <td data-label="Lieu">Las Vegas, Etats-Unis</td>
+                            <td data-label="Notes"></td>
                         </tr>
                         <tr>
-                            <td style="background: #ddffdd">Victoire</td>
-                            <td>8-0</td>
-                            <td>Jairzinho Rozenstruik</td>
-                            <td>Décision unanime</td>
-                            <td>UFC Fight Night: Rozenstruik vs Gane</td>
-                            <td>28 février 2021</td>
-                            <td>5</td>
-                            <td>5:00</td>
-                            <td>Las Vegas, Etats-Unis</td>
-                            <td></td>
+                            <td
+                                scope="row"
+                                data-label="Résultat"
+                                style="background: #ddffdd"
+                            >
+                                Victoire
+                            </td>
+                            <td data-label="Record">8-0</td>
+                            <td data-label="Adversaire">
+                                Jairzinho Rozenstruik
+                            </td>
+                            <td data-label="Méthode">Décision unanime</td>
+                            <td data-label="Evènement">
+                                UFC Fight Night: Rozenstruik vs Gane
+                            </td>
+                            <td data-label="Date">28 février 2021</td>
+                            <td data-label="Round">5</td>
+                            <td data-label="Temps">5:00</td>
+                            <td data-label="Lieu">Las Vegas, Etats-Unis</td>
+                            <td data-label="Notes"></td>
                         </tr>
                         <tr>
-                            <td style="background: #ddffdd">Victoire</td>
-                            <td>7-0</td>
-                            <td>Júnior dos Santos</td>
-                            <td>TKO (coups de coude)</td>
-                            <td>UFC 256: Figueiredo vs Moreno</td>
-                            <td>12 décembre 2020</td>
-                            <td>2</td>
-                            <td>2:34</td>
-                            <td>Las Vegas, Etats-Unis</td>
-                            <td></td>
+                            <td
+                                scope="row"
+                                data-label="Résultat"
+                                style="background: #ddffdd"
+                            >
+                                Victoire
+                            </td>
+                            <td data-label="Record">7-0</td>
+                            <td data-label="Adversaire">Júnior dos Santos</td>
+                            <td data-label="Méthode">TKO (coups de coude)</td>
+                            <td data-label="Evènement">
+                                UFC 256: Figueiredo vs Moreno
+                            </td>
+                            <td data-label="Date">12 décembre 2020</td>
+                            <td data-label="Round">2</td>
+                            <td data-label="Temps">2:34</td>
+                            <td data-label="Lieu">Las Vegas, Etats-Unis</td>
+                            <td data-label="Notes"></td>
                         </tr>
                         <tr>
-                            <td style="background: #ddffdd">Victoire</td>
-                            <td>6-0</td>
-                            <td>Tanner Boser</td>
-                            <td>Décision unanime</td>
-                            <td>
+                            <td
+                                scope="row"
+                                data-label="Résultat"
+                                style="background: #ddffdd"
+                            >
+                                Victoire
+                            </td>
+                            <td data-label="Record">6-0</td>
+                            <td data-label="Adversaire">Tanner Boser</td>
+                            <td data-label="Méthode">Décision unanime</td>
+                            <td data-label="Evènement">
                                 UFC Fight Night: Edgar vs. The Korean Zombie
                             </td>
-                            <td>21 décembre 2019</td>
-                            <td>3</td>
-                            <td>4:46</td>
-                            <td>Pusan, Corée du Sud</td>
-                            <td>
+                            <td data-label="Date">21 décembre 2019</td>
+                            <td data-label="Round">3</td>
+                            <td data-label="Temps">4:46</td>
+                            <td data-label="Lieu">Pusan, Corée du Sud</td>
+                            <td data-label="Notes">
                                 Remporte le titre de champion intérimaire des
                                 poids lourds de l'UFC.
                                 <p>Performance de la soirée</p>
                             </td>
                         </tr>
                         <tr>
-                            <td style="background: #ddffdd">Victoire</td>
-                            <td>5-0</td>
-                            <td>Don'Tale Mayes</td>
-                            <td>Soumission</td>
-                            <td>UFC Fight Night: Maia vs. Askren</td>
-                            <td>26 octobre 2019</td>
-                            <td>3</td>
-                            <td>4:46</td>
-                            <td>Kallang, Singapour</td>
-                            <td>
+                            <td
+                                scope="row"
+                                data-label="Résultat"
+                                style="background: #ddffdd"
+                            >
+                                Victoire
+                            </td>
+                            <td data-label="Record">5-0</td>
+                            <td data-label="Adversaire">Don'Tale Mayes</td>
+                            <td data-label="Méthode">Soumission</td>
+                            <td data-label="Evènement">
+                                UFC Fight Night: Maia vs. Askren
+                            </td>
+                            <td data-label="Date">26 octobre 2019</td>
+                            <td data-label="Round">3</td>
+                            <td data-label="Temps">4:46</td>
+                            <td data-label="Lieu">Kallang, Singapour</td>
+                            <td data-label="Notes">
                                 <p>Performance de la soirée</p>
                             </td>
                         </tr>
                         <tr>
-                            <td style="background: #ddffdd">Victoire</td>
-                            <td>4-0</td>
-                            <td>Raphael Pessoa</td>
-                            <td>Soumission</td>
-                            <td>UFC Fight Night: Shevchenko vs. Carmouche 2</td>
-                            <td>10 août 2019</td>
-                            <td>1</td>
-                            <td>4:42</td>
-                            <td>Montevideo, Uruguay</td>
-                            <td>
+                            <td
+                                scope="row"
+                                data-label="Résultat"
+                                style="background: #ddffdd"
+                            >
+                                Victoire
+                            </td>
+                            <td data-label="Record">4-0</td>
+                            <td data-label="Adversaire">Raphael Pessoa</td>
+                            <td data-label="Méthode">Soumission</td>
+                            <td data-label="Evènement">
+                                UFC Fight Night: Shevchenko vs. Carmouche 2
+                            </td>
+                            <td data-label="Date">10 août 2019</td>
+                            <td data-label="Round">1</td>
+                            <td data-label="Temps">4:42</td>
+                            <td data-label="Lieu">Montevideo, Uruguay</td>
+                            <td data-label="Notes">
                                 Remporte le titre de champion intérimaire des
                                 poids lourds de l'UFC.
                                 <p>Performance de la soirée</p>
                             </td>
                         </tr>
                         <tr>
-                            <td style="background: #ddffdd">Victoire</td>
-                            <td>3-0</td>
-                            <td>Roggers Souza</td>
-                            <td>TKO (coups de poing)</td>
-                            <td>TKO 48: Souza vs Gane</td>
-                            <td>24 mai 2019</td>
-                            <td>1</td>
-                            <td>4:26</td>
-                            <td>Gatineau, Canada</td>
-                            <td>
+                            <td
+                                scope="row"
+                                data-label="Résultat"
+                                style="background: #ddffdd"
+                            >
+                                Victoire
+                            </td>
+                            <td data-label="Record">3-0</td>
+                            <td data-label="Adversaire">Roggers Souza</td>
+                            <td data-label="Méthode">TKO (coups de poing)</td>
+                            <td data-label="Evènement">
+                                TKO 48: Souza vs Gane
+                            </td>
+                            <td data-label="Date">24 mai 2019</td>
+                            <td data-label="Round">1</td>
+                            <td data-label="Temps">4:26</td>
+                            <td data-label="Lieu">Gatineau, Canada</td>
+                            <td data-label="Notes">
                                 Défend le titre de Champion des poids lourds du
                                 TKO.
                             </td>
                         </tr>
                         <tr>
-                            <td style="background: #ddffdd">Victoire</td>
-                            <td>2-0</td>
-                            <td>Adam Dyczka</td>
-                            <td>TKO (coups de poing)</td>
-                            <td>TKO 44: Hunter vs Barriault</td>
-                            <td>21 septembre 2018</td>
-                            <td>2</td>
-                            <td>4:57</td>
-                            <td>Québec, Canada</td>
-                            <td>
+                            <td
+                                scope="row"
+                                data-label="Résultat"
+                                style="background: #ddffdd"
+                            >
+                                Victoire
+                            </td>
+                            <td data-label="Record">2-0</td>
+                            <td data-label="Adversaire">Adam Dyczka</td>
+                            <td data-label="Méthode">TKO (coups de poing)</td>
+                            <td data-label="Evènement">
+                                TKO 44: Hunter vs Barriault
+                            </td>
+                            <td data-label="Date">21 septembre 2018</td>
+                            <td data-label="Round">2</td>
+                            <td data-label="Temps">4:57</td>
+                            <td data-label="Lieu">Québec, Canada</td>
+                            <td data-label="Notes">
                                 Défend le titre de Champion des poids lourds du
                                 TKO.
                             </td>
                         </tr>
                         <tr>
-                            <td style="background: #ddffdd">Victoire</td>
-                            <td>1-0</td>
-                            <td>Bobby Sullivan</td>
-                            <td>Soumission</td>
-                            <td>TKO Fight Night 1</td>
-                            <td>2 août 2018</td>
-                            <td>1</td>
-                            <td>1:42</td>
-                            <td>Montréal, Canada</td>
-                            <td>
+                            <td
+                                scope="row"
+                                data-label="Résultat"
+                                style="background: #ddffdd"
+                            >
+                                Victoire
+                            </td>
+                            <td data-label="Record">1-0</td>
+                            <td data-label="Adversaire">Bobby Sullivan</td>
+                            <td data-label="Méthode">Soumission</td>
+                            <td data-label="Evènement">TKO Fight Night 1</td>
+                            <td data-label="Date">2 août 2018</td>
+                            <td data-label="Round">1</td>
+                            <td data-label="Temps">1:42</td>
+                            <td data-label="Lieu">Montréal, Canada</td>
+                            <td data-label="Notes">
                                 Obtient le titre de Champion des poids lourds du
                                 TKO.
                             </td>
                         </tr>
                     </tbody>
                 </table>
-            </div>
-        </div>
+            </article>
+        </section>
 
         <footer>
             <a href="about.html">A propos</a>
         </footer>
+
+        <script type="text/javascript" src="../js/script.js"></script>
     </body>
 </html>
